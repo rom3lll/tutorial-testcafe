@@ -1,0 +1,22 @@
+{
+  "name": "tutorial-cypress",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "testcafe chrome ./src/tests/login.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@ffmpeg-installer/ffmpeg": "^1.1.0",
+    "allure-commandline": "^2.13.8",
+    "dotenv": "^10.0.0",
+    "eslint": "^7.32.0",
+    "eslint-plugin-testcafe": "^0.2.1",
+    "faker": "^5.5.3",
+    "testcafe": "^1.15.2",
+    "testcafe-reporter-allure-expanded": "^1.1.0"
+  }
+}
