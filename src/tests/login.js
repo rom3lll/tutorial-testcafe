@@ -10,5 +10,15 @@ fixture`First time TestCafe`
 
 test('First testcase in tescafe', async()=>{
     await LOGIN_TASKS.loginAttempt('Alfred','Password')
-    await LOGIN_QUESTIONS.validateInvalidUserNameMessage()
+    await LOGIN_QUESTIONS.validateInvalidUserNameMessage('invalidUsername')
+})
+
+test('Second testcase in testcafe', async()=>{
+    await LOGIN_TASKS.loginAttempt('tomsmith','Password')
+    await LOGIN_QUESTIONS.validateInvalidUserNameMessage('invalidPassword')
+})
+
+test('Third testcase in testcafe', async()=>{
+    await LOGIN_TASKS.loginAttempt('tomsmith','SuperSecretPassword!')
+    await LOGIN_QUESTIONS.validateInvalidUserNameMessage('loginSucces')
 })
